@@ -3,18 +3,18 @@
 </script>
 
 <template>
-  <div>
+  <div class="bg-slate-800 h-10 text-[#42b883] pt-2 flex flex-row justify-end">
 
-    <RouterLink :to="{name: 'home'}" class="nav-link">HOME</RouterLink>
-    <RouterLink :to="{name: 'about'}" class="nav-link">ABOUT</RouterLink>
+    <RouterLink :to="{name: 'home'}" class="mr-5">HOME</RouterLink>
+    <RouterLink :to="{name: 'about'}" class="mr-5">ABOUT</RouterLink>
 
+  </div>
+  <div class="container m-3">
     <!-- render routerview -->
-    <RouterView></RouterView>
+    <RouterView></RouterView> 
   </div>
 </template>
 
 <style scoped>
-.nav-link {
-  margin-left: 10px;
-}
+
 </style>
